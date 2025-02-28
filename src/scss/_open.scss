@@ -1,0 +1,23 @@
+.open {
+  &_aside {
+    transform: translateX(0%);
+    display: inline-block;
+    opacity: 1;
+  }
+  &_feedback {
+    opacity: 1;
+    transform: translateX(0%);
+    .feedback__close {
+      position: absolute;
+      top: 20px;
+      left: -72px;
+    }
+    .call__close {
+      opacity: 1;
+      transform: translateX(0%);
+      position: absolute;
+      top: 20px;
+      left: -72px;
+    }
+  }
+}

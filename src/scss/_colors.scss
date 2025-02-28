@@ -1,0 +1,17 @@
+$bgColor: #24292e;
+$text: #fff;
+$hover: #007aff;
+$asideShadow: #0e185033;
+$secondMain: #41f6d7;
+$borderLine: #d9fff5;
+$mainBackground: #f8f8f8;
+$borderMain: #eaeaea;
+$pagination: #dddddd;
+$paginationActive: #b5b6bc;
+$languageHover: #7e7e82;
+$main: #ff3e79;
+$menuItemActive: #b8ffec;
+
+@mixin hoverFilter {
+  filter: hue-rotate(-110deg);
+}

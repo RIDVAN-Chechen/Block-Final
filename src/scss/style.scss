@@ -1,17 +1,25 @@
-$bgColor: #24292e;
-$text: #fff;
+@import './colors';
+@import './fonts';
+@import './container';
+@import './header';
+@import './main';
+@import './read-more';
+@import './logo';
+@import './aside';
+@import './link';
+@import './contacts';
+@import './button.scss';
+@import './change-language';
+@import './brands';
+@import './technik-type';
+@import './prices';
+@import './footer';
+@import './transparent';
+@import './feedback';
+@import './call';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
+@import './open';
 body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  margin: 0px;
+  font-family: 'TT Lakes Regular';
 }

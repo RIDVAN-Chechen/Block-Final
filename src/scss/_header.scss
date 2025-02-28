@@ -1,0 +1,128 @@
+@media (min-width: 320px) {
+  .header__dec-line_screen_768 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .header__dec-line_screen_768 {
+    display: block;
+    margin: 0px 20px;
+  }
+}
+
+.header__dec-line {
+  width: 2px;
+  height: 32px;
+  background-color: $borderMain;
+  border-radius: 1px;
+}
+@media (min-width: 1120px) {
+  .header__dec-line {
+    display: none;
+  }
+}
+
+.header__left {
+  min-width: 154px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 320px) {
+  .header__right_screen_768 {
+    min-width: 118px;
+  }
+}
+@media (min-width: 768px) {
+  .header__right_screen_768 {
+    min-width: 300px;
+  }
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__item {
+  background-color: white;
+  border: 0;
+  transition: border 0.5s;
+}
+.header__item img:hover {
+  @include hoverFilter;
+
+  border-radius: 100%;
+}
+
+@media (min-width: 320px) {
+  .header__item_screen_768 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .header__item_screen_768 {
+    display: inline;
+  }
+}
+
+@media (min-width: 1120px) {
+  .header__item {
+    display: none;
+  }
+  .header__item_screen_1120 {
+    display: inline;
+  }
+}
+
+@media (min-width: 320px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1120px) {
+  .header__wrapper1120 {
+    display: flex;
+    align-items: center;
+    padding-left: 34px;
+  }
+  .header__wrapper1120:hover {
+    border: 2px solid #80949f;
+    transition: border 0.1s;
+    border-radius: 6px;
+  }
+}
+
+@media (min-width: 320px) {
+  .header__description1120 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1120px) {
+  .header__description1120 {
+    padding-right: 9px;
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.header {
+  height: 88px;
+  border-bottom: 1px $borderLine solid;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+}
+@media (min-width: 1120px) {
+  .header {
+    margin-top: 20px;
+    margin-bottom: -94px;
+    padding-right: 32px;
+    border: none;
+  }
+}

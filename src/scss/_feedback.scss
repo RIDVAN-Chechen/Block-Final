@@ -1,0 +1,55 @@
+.feedback {
+  transition: all 0.5s;
+  z-index: 10;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  background-color: white;
+  opacity: 0;
+  display: absolute;
+  width: 320px;
+  height: 100vh;
+  box-shadow: 0 16px 52px 0 #0e185033;
+  padding-top: 20px;
+  &__title-dec {
+    background: linear-gradient(to left, $secondMain 50%, transparent 50%);
+  }
+  &__form {
+    width: 288px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  &__input {
+    box-sizing: border-box;
+    border: 1px solid $borderMain;
+    border-radius: 7px;
+    width: 288px;
+    padding: 11px;
+    margin-bottom: 15px;
+  }
+  &__input::placeholder {
+    font-family: 'TT Lakes Regular';
+  }
+  &__textarea {
+    resize: none;
+    padding-bottom: 70px;
+  }
+  &__text {
+    width: 288px;
+    text-align: left;
+    font-style: 14px;
+    color: $languageHover;
+  }
+  &__link {
+    color: main;
+  }
+  &__link:hover {
+    color: $hover;
+  }
+  &__button {
+    display: block;
+    margin: 15px 0 0 auto;
+  }
+}

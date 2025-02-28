@@ -1,0 +1,21 @@
+.technic-type {
+  .read-more {
+    display: none;
+  }
+  &__item {
+    height: 160px;
+  }
+  &__text {
+    display: inline-block;
+    margin: 20px 0 0 16px;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .technic-type {
+    .read-more {
+      display: flex;
+    }
+  }
+}

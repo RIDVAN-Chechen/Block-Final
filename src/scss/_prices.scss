@@ -1,0 +1,145 @@
+.prices {
+  padding-bottom: 40px;
+  &__wrapper {
+    height: max-content;
+  }
+  .wrapper_showed {
+    height: auto;
+  }
+  &__container {
+    padding-top: 24px;
+  }
+  &__item {
+    width: 244px;
+    height: 184px;
+    padding: 16px;
+    border-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__item:hover {
+    .prices__button {
+      transition: all 0.5s;
+      @include hoverFilter;
+    }
+  }
+  &__text-header {
+    font-family: 'TT Lakes Medium';
+    color: #7e7e82;
+    display: block;
+  }
+  &__button {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    &:hover {
+      transition: all 0.5s;
+      @include hoverFilter;
+    }
+  }
+  &__offer {
+    display: block;
+    width: 288px;
+    margin: 0 auto;
+  }
+  &__offer-link {
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    &:hover {
+      color: $languageHover;
+      .prices__offer-img {
+        @include hoverFilter;
+      }
+    }
+  }
+  &__offer-img {
+    position: relative;
+    top: 2px;
+    left: 10px;
+  }
+  &__header {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .prices {
+    &__wrapper {
+      display: inline-block;
+      .swiper-slide {
+        display: inline-block;
+        width: 720px;
+        height: min-content;
+        background-color: #fff;
+        border-radius: 6px;
+      }
+    }
+    &__container {
+      width: 720px;
+      margin: 0 auto;
+    }
+    &__item {
+      margin: 0 auto;
+      width: 720px;
+      height: 64px;
+      padding: 16px;
+      border-color: #fff;
+      border-radius: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &::before {
+        content: '';
+        width: 688px;
+        height: 1px;
+        background-color: #eaeaea;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    &__text-header {
+      display: none;
+    }
+    &__button {
+      width: 119px;
+      position: static;
+      display: block;
+    }
+    &__service {
+      display: inline-block;
+      width: 348px;
+      text-align: left;
+    }
+    &__time {
+      display: inline-block;
+      width: 74px;
+      text-align: left;
+    }
+    &__cost {
+      display: inline-block;
+      width: 81px;
+      text-align: left;
+    }
+    &__header {
+      background-color: $mainBackground;
+      .prices__item {
+        border: none;
+        background-color: $mainBackground;
+        color: $languageHover;
+        text-align: left;
+        .prices__time {
+          margin-right: 140px;
+        }
+      }
+    }
+    &__offer-container {
+      width: 460px;
+    }
+    &__offer {
+      width: 720px;
+    }
+  }
+}

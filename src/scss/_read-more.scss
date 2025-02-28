@@ -1,0 +1,23 @@
+.read-more__wrapper {
+  padding-bottom: 16px;
+}
+.read-more {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 134px;
+  height: 24px;
+  margin-left: 12px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  border: 1px solid $borderMain;
+  border-radius: 4px;
+}
+.read-more:hover {
+  transition: all 0.5s;
+  border-color: $hover;
+}
+.read-more_opened .read-more__icon {
+  transform: rotate(180deg);
+}
